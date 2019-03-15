@@ -16,16 +16,16 @@ public class DataStructreReview {
      */
     public static void main(String[] args) {
         DoublyLinkedList doublyLinkedList = new DoublyLinkedList ();
-        //---
         doublyLinkedList.insetAtBegining(5);
-        
         doublyLinkedList.retrieveBegining();
-        
         doublyLinkedList.insetAtBegining(8);
-        
         doublyLinkedList.insetAtBegining(9);
         doublyLinkedList.insetAtBegining(10);
         doublyLinkedList.retrieveBegining();
+        
+        doublyLinkedList.retrieveEnd();
+        doublyLinkedList.insertAtEnd(80);
+        doublyLinkedList.retrieveEnd();
         
         
     }

@@ -44,26 +44,61 @@ public class DoublyLinkedList {
     tail = head ;
     }
         //-- it's contain  nodes 
-        
+    else {   
         Node temp = new Node (data);
         
         temp.next=head ;
         temp.prev=null;
         head = temp;
+        
+    }
+    
+    size ++;
+    
           
     }
 
 
     
     public void retrieveBegining(){
+    if (head==null)
+            System.out.println("The list is empty ! ");
+    
+    else 
     
         System.out.println("The top is "+head.data);
         
-    
     }
     
 
+ public void insertAtEnd(int data){
+     Node temp = new Node (data);
+     if (head == null && tail ==null ){ 
+     temp.prev = null ; 
+     temp.next = null ; 
+     }
+     else 
+     {
+     
+     temp.prev=tail;
+     temp.next=null;
+     tail = temp;
+     }
+     
+     size ++;
+     System.out.println("Added successfully");
  
+ }
+ 
+ 
+ public void retrieveEnd(){
+ if (tail ==null)
+         System.out.println("The list is empty");
+ else 
+         System.out.println("The Last node is "+tail.data);
+ 
+ 
+ }
     
     
     
