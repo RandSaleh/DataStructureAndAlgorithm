@@ -99,6 +99,45 @@ public class DoublyLinkedList {
  
  
  }
+ 
+ 
+ 
+ public void removeFromBegining(){
+     if (head ==null)
+         System.out.println("The list is empty");
+     else {
+         if (head ==tail)
+         { head =null;
+            tail =null;
+         }
+         else {
+         // more than one node 
+         
+         Node temp= head;
+         temp=temp.next ;
+         temp.prev = null;
+         head = head.next;
+         }
+         
+     
+     }
+ }
+ public void removeFromLast(){
+    
+     if (tail==null)
+         System.out.println("The list is empty ");
+     else {
+     
+        Node  temp = tail.prev;
+        tail.prev=null;
+        tail=temp;    
+     
+     }     
+     
+     
+ 
+ 
+ }
     
     
     
