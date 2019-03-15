@@ -22,6 +22,19 @@ public class DataStructreReview {
         doublyLinkedList.removeFromLast();
         doublyLinkedList.retrieveEnd();
         
+        
+        //-----------------------------------------
+        System.out.println("--------------------------------");
+        Stack stack = new Stack();
+        
+        stack.push(8);
+        stack.peek();
+        stack.push(9);
+        stack.pop();
+        stack.peek();
+        
+        
+        
     }
     
 }
