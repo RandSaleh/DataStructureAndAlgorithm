@@ -15,7 +15,19 @@ public class DataStructreReview {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        DoublyLinkedList doublyLinkedList = new DoublyLinkedList ();
+        //---
+        doublyLinkedList.insetAtBegining(5);
+        
+        doublyLinkedList.retrieveBegining();
+        
+        doublyLinkedList.insetAtBegining(8);
+        
+        doublyLinkedList.insetAtBegining(9);
+        doublyLinkedList.insetAtBegining(10);
+        doublyLinkedList.retrieveBegining();
+        
+        
     }
     
 }
